@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="pl"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111217">
+  <meta name="description" content="Porównaj przykładowe pakiety PC Club. Wybierz strefę Standard lub Pro, czas gry i liczbę stanowisk, aby obliczyć koszt sesji.">
+  <title>Cennik — PC Club</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer=""></script>
+<link rel="stylesheet" href="reference.css"></head>
+<body class="reference-layout page-price">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header"><div class="container header-inner"><button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button><a class="brand" href="index.html" aria-label="PC Club — strona główna"><span class="brand-name"><span>PC Club</span>PC Club</span></a><nav class="desktop-nav" aria-label="Nawigacja główna"><a href="index.html">Strona główna</a><a href="wypozyczalnia.html">Wynajem PC</a><a href="cennik.html" aria-current="page">Cennik</a><a href="kontakt.html">Kontakt</a></nav><nav class="mobile-menu" id="mobile-menu" aria-label="Menu rozwijane" hidden=""><span class="eyebrow">WYBIERZ STRONĘ</span><a href="index.html">Strona główna <span aria-hidden="true">↗</span></a><a href="wypozyczalnia.html">Wynajem PC <span aria-hidden="true">↗</span></a><a href="cennik.html" aria-current="page">Cennik <span aria-hidden="true">↗</span></a><a href="kontakt.html">Kontakt <span aria-hidden="true">↗</span></a><p>PC Club — czas na grę.</p></nav></div></header>
+  <noscript><nav class="noscript-nav" aria-label="Nawigacja bez JavaScript"><a href="index.html">Strona główna</a><a href="wypozyczalnia.html">Wynajem PC</a><a href="cennik.html">Cennik</a><a href="kontakt.html">Kontakt</a></nav></noscript>
+  <main id="main">
+    <section class="page-intro">
+      <div class="container page-intro-inner">
+        <div><span class="eyebrow">CZAS NA GRĘ</span><h1>Cennik</h1><p>Porównaj czas trwania sesji i zaplanuj wizytę w klubie. Ceny oraz koszt wybranego pakietu znajdziesz w jednym miejscu.</p></div>
+        <div class="intro-note">Twój czas.<br>Twoja sesja.<br><strong>Twój wybór.</strong></div>
+      </div>
+    </section>
+    <div class="container page-content">
+      <div class="demo-notice"><span class="notice-icon" aria-hidden="true">i</span><p><strong>To cennik demonstracyjny.</strong> Ceny są przykładowe. Kalkulator nie sprawdza dostępności i nie tworzy rezerwacji. Dane kontaktowe klubu wymagają uzupełnienia.</p></div>
+      <div class="panel" id="price-calculator"><div class="calculator-heading"><h2>Porównaj długość sesji</h2><div class="segmented" role="group" aria-label="Strefa gry"><button type="button" class="active" data-zone="standard" aria-pressed="true">Standard</button><button type="button" data-zone="pro" aria-pressed="false">Pro <span aria-hidden="true">↗</span></button></div></div><div class="price-overview" aria-label="Podsumowanie wybranego pakietu"><div class="overview-cell"><span>WYBRANY CZAS</span><strong><output id="calc-duration">3 godz.</output></strong></div><div class="overview-cell"><span>LICZBA PC</span><strong><output id="calc-quantity">1 PC</output></strong></div><div class="overview-cell overview-total"><span>ŁĄCZNY KOSZT</span><output id="calc-total" aria-live="polite" aria-label="Łączna cena">27 zł</output></div></div>
+        <div class="calculator-layout">
+          <div>
+            
+            <div class="control-group"><span class="control-label" id="duration-label">01 / Jak długo grasz?</span><div class="choice-grid" role="group" aria-labelledby="duration-label"><button type="button" class="choice-button" data-hours="1" aria-pressed="false"><strong>1 godzina</strong><span data-package-price="1">10 zł</span></button><button type="button" class="choice-button active" data-hours="3" aria-pressed="true"><strong>3 godziny</strong><span data-package-price="3">27 zł</span></button><button type="button" class="choice-button" data-hours="5" aria-pressed="false"><strong>5 godzin</strong><span data-package-price="5">40 zł</span></button><button type="button" class="choice-button" data-hours="10" aria-pressed="false"><strong>Pakiet 10 h</strong><span data-package-price="10">65 zł</span></button></div></div>
+            <div class="control-group"><span class="control-label" id="quantity-label">02 / Ile stanowisk potrzebujesz?</span><div class="quantity-options" role="group" aria-labelledby="quantity-label"><button type="button" class="active" data-qty="1" aria-pressed="true" aria-label="1 stanowisko">1</button><button type="button" data-qty="2" aria-pressed="false" aria-label="2 stanowiska">2</button><button type="button" data-qty="3" aria-pressed="false" aria-label="3 stanowiska">3</button><button type="button" data-qty="4" aria-pressed="false" aria-label="4 stanowiska">4</button><button type="button" data-qty="5" aria-pressed="false" aria-label="5 stanowisk">5</button><button type="button" data-qty="6" aria-pressed="false" aria-label="6 stanowisk">6</button></div></div>
+            <table class="price-table"><caption>Ceny pakietów za jedno stanowisko</caption><thead><tr><th scope="col">CZAS TRWANIA</th><th scope="col">CENA ZA 1 PC</th><th scope="col">ŁĄCZNIE</th></tr></thead><tbody><tr><th scope="row">1 godzina</th><td data-package-price="1">10 zł</td><td data-package-total="1">10 zł</td></tr><tr><th scope="row">3 godziny</th><td data-package-price="3">27 zł</td><td data-package-total="3">27 zł</td></tr><tr><th scope="row">5 godzin</th><td data-package-price="5">40 zł</td><td data-package-total="5">40 zł</td></tr><tr><th scope="row">Pakiet 10 h</th><td data-package-price="10">65 zł</td><td data-package-total="10">65 zł</td></tr></tbody></table><p class="calculator-footnote">Za jedno stanowisko: <output id="calc-per-seat">27 zł</output> · Mniej niż za pojedyncze godziny: <output id="calc-savings">3 zł</output>. Ceny przykładowe.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="price-lower">
+        <section class="panel"><span class="eyebrow">JASNE ZASADY</span><h2>Warto wiedzieć.</h2><ul class="rules-list"><li>Pakiet 10 h obejmuje 10 godzin gry. Nie oznacza całej doby ani abonamentu.</li><li>Wszystkie ceny w tej wersji są przykładowe i wymagają zatwierdzenia przez klub.</li><li>Planer nie sprawdza dostępności stanowisk ani miejsc obok siebie.</li><li>Zapisanie lub pobranie planu nie oznacza potwierdzenia rezerwacji przez klub.</li></ul></section>
+        <section class="panel dark-panel"><span class="eyebrow">DOBRA GRA ZACZYNA SIĘ OD PLANU</span><h2>Zaplanuj swoją<br>sesję.</h2><p>Wybierz od jednego do sześciu stanowisk, dodaj termin i zapisz wszystko w jednym miejscu.</p><a class="button button-lime" href="wypozyczalnia.html" id="calculator-booking">Przejdź do wynajmu <span aria-hidden="true">→</span></a></section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-contact-row"><div class="footer-question"><span class="eyebrow">KONTAKT</span><h2>Masz pytania?</h2><p>Zapytaj o rezerwację, cennik lub szczegóły wizyty.</p></div><div class="footer-contact"><span>TELEFON</span><strong>Do uzupełnienia</strong></div><div class="footer-contact"><span>E-MAIL</span><strong>Do uzupełnienia</strong></div><div class="footer-contact"><span>ADRES KLUBU</span><strong>Do uzupełnienia</strong></div></div><div class="footer-bottom"><a class="footer-brand" href="index.html">PC Club</a><nav aria-label="Nawigacja w stopce"><a href="index.html">Strona główna</a><a href="wypozyczalnia.html">Wynajem PC</a><a href="cennik.html" aria-current="page">Cennik</a><a href="kontakt.html">Kontakt</a></nav><span class="demo-label">WERSJA KONCEPCYJNA</span></div></div></footer>
+
+
+</body></html>

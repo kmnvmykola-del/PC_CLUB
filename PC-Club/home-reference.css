@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+/* The homepage keeps the reference's central title, paired actions and contact block. */
+.page-home .home-hero {
+  min-height:560px;
+  background:#111217;
+  color:#fff;
+}
+
+.page-home .hero-visual {
+  inset:0;
+  opacity:1;
+  background-color:#111217;
+  background-position:center 56%;
+}
+
+.page-home .hero-visual::after {
+  background:linear-gradient(90deg,#111217c9,#11121775 52%,#11121785),linear-gradient(0deg,#111217a6,transparent 65%);
+}
+
+.page-home .hero-inner {
+  min-height:560px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:76px 0 110px;
+}
+
+.page-home .hero-copy {
+  width:100%;
+  padding:0;
+  text-align:center;
+}
+
+.page-home .hero-copy h1 {
+  font-size:58px;
+  line-height:1.1;
+  letter-spacing:-.035em;
+  font-weight:700;
+}
+
+.page-home .hero-copy>p {
+  max-width:640px;
+  margin:20px auto 0;
+  color:#e1e0e2;
+  font-size:14px;
+  line-height:1.8;
+  text-shadow:0 1px 14px #000;
+}
+
+.page-home .hero-actions {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  max-width:960px;
+  margin:43px auto 0;
+  gap:24px;
+}
+
+.home-action-card {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:170px;
+  padding:32px 20px;
+  border:1px solid #ecebea;
+  border-radius:14px;
+  background:#fff;
+  color:#17181d;
+  transition:background .18s,transform .18s;
+}
+
+.home-action-card:hover {
+  background:#f1eee8;
+  transform:translateY(-2px);
+}
+
+.home-action-card>span {
+  font-size:9px;
+  font-weight:400;
+  line-height:1.4;
+  letter-spacing:.1em;
+  margin-bottom:15px;
+}
+
+.home-action-card>strong {
+  font-size:31px;
+  font-weight:700;
+  line-height:1.15;
+  letter-spacing:-.035em;
+}
+
+.hero-photo-note {
+  position:absolute;
+  bottom:20px;
+  right:0;
+  color:#d5d2d0;
+  font-size:8px;
+  letter-spacing:.045em;
+}
+
+.home-contact,
+.home-equipment {
+  background:#f4f0e7;
+  color:#202125;
+}
+
+.home-contact {
+  padding:60px 0 25px;
+  text-align:center;
+}
+
+.home-contact>.container>.eyebrow {
+  font-size:9px;
+  margin-bottom:8px;
+}
+
+.home-contact h2 {
+  font-size:30px;
+  font-weight:700;
+  line-height:1.2;
+}
+
+.home-contact-intro {
+  margin:14px auto 0;
+  max-width:650px;
+  font-size:13px;
+  line-height:1.8;
+  color:#68636a;
+}
+
+.home-contact-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  max-width:960px;
+  margin:28px auto 0;
+  text-align:left;
+}
+
+.home-contact-card {
+  display:block;
+  padding:24px;
+  background:#fff;
+  border:1px solid #e6e2dd;
+  border-radius:12px;
+  transition:background .18s;
+}
+
+.home-contact-card:hover {
+  background:#faf9f6;
+}
+
+.home-contact-card>span {
+  display:block;
+  font-size:9px;
+  line-height:1.5;
+  letter-spacing:.04em;
+  color:#5e5a60;
+}
+
+.home-contact-card h3 {
+  font-size:21px;
+  font-weight:700;
+  line-height:1.2;
+  margin-top:12px;
+  overflow-wrap:anywhere;
+}
+
+.home-contact-card p {
+  font-size:11px;
+  line-height:1.8;
+  color:#68636a;
+  margin-top:12px;
+}
+
+.club-description {
+  padding:40px 0 12px;
+}
+
+.club-description h2 {
+  font-size:24px;
+  font-weight:700;
+}
+
+.club-description p {
+  max-width:650px;
+  margin:14px auto 0;
+  color:#68636a;
+  font-size:14px;
+  line-height:1.8;
+}
+
+.home-equipment {
+  padding:30px 0 65px;
+}
+
+.equipment-heading {
+  max-width:960px;
+  text-align:center;
+  margin:0 auto 28px;
+}
+
+.equipment-heading .eyebrow {
+  font-size:9px;
+  color:#68636a;
+  margin-bottom:10px;
+}
+
+.equipment-heading h2 {
+  font-size:27px;
+  font-weight:600;
+}
+
+.page-home .zone-grid,
+.page-home .home-equipment .fine-print {
+  max-width:960px;
+  margin-inline:auto;
+}
+
+.page-home .zone-card {
+  border-radius:14px;
+  border-color:#deddd9;
+}
+
+.page-home .hardware-art {
+  --lime:#c5ef74;
+  height:205px;
+}
+
+.page-home .zone-top,
+.page-home .zone-body {
+  padding:22px 24px;
+}
+
+.page-home .zone-body {
+  background:#fff;
+}
+
+.page-home .zone-title h3 {
+  font-size:25px;
+}
+
+.page-home .zone-title strong {
+  font-size:22px;
+}
+
+.page-home .zone-body>p {
+  font-size:11px;
+}
+
+.page-home .zone-body .text-link {
+  font-size:11px;
+}
+
+.page-home .home-equipment .fine-print {
+  margin-top:18px;
+  font-size:10px;
+  color:#68636a;
+  text-align:center;
+}
+
+.page-home .site-footer {
+  border-top:1px solid #e1dbd0;
+}
+
+@media (max-width:900px) {
+  .page-home .home-hero,
+  .page-home .hero-inner {
+    min-height:520px;
+  }
+  .page-home .hero-inner {
+    padding:64px 0 92px;
+  }
+  .page-home .hero-copy h1 {
+    font-size:52px;
+  }
+  .home-action-card {
+    min-height:150px;
+  }
+  .home-action-card>strong {
+    font-size:27px;
+  }
+  .home-contact-card {
+    padding:20px;
+  }
+  .home-contact-card h3 {
+    font-size:19px;
+  }
+  .page-home .hardware-art {
+    height:195px;
+  }
+}
+
+@media (max-width:700px) {
+  .page-home .home-hero,
+  .page-home .hero-inner {
+    min-height:545px;
+  }
+  .page-home .hero-inner {
+    padding:46px 0 65px;
+  }
+  .page-home .hero-copy h1 {
+    font-size:43px;
+  }
+  .page-home .hero-copy>p {
+    max-width:360px;
+    font-size:12px;
+    line-height:1.8;
+    margin-top:17px;
+  }
+  .page-home .hero-copy>p br {
+    display:none;
+  }
+  .page-home .hero-actions {
+    gap:13px;
+    margin-top:30px;
+  }
+  .home-action-card {
+    min-height:130px;
+    padding:24px 10px;
+    border-radius:10px;
+  }
+  .home-action-card>span {
+    font-size:8px;
+    margin-bottom:12px;
+  }
+  .home-action-card>strong {
+    font-size:23px;
+  }
+  .hero-photo-note {
+    font-size:7px;
+    bottom:17px;
+  }
+  .home-contact {
+    padding:40px 0 20px;
+  }
+  .home-contact h2 {
+    font-size:27px;
+  }
+  .home-contact-intro {
+    font-size:12px;
+    max-width:410px;
+  }
+  .home-contact-intro br,
+  .club-description p br {
+    display:none;
+  }
+  .home-contact-grid {
+    grid-template-columns:1fr;
+    gap:13px;
+    margin-top:24px;
+  }
+  .home-contact-card {
+    padding:21px;
+  }
+  .home-contact-card h3 {
+    font-size:21px;
+  }
+  .club-description {
+    padding-top:33px;
+  }
+  .club-description h2 {
+    font-size:23px;
+  }
+  .club-description p {
+    font-size:12px;
+    max-width:410px;
+  }
+  .home-equipment {
+    padding:23px 0 45px;
+  }
+  .equipment-heading h2 {
+    font-size:25px;
+  }
+  .page-home .hardware-art {
+    height:210px;
+  }
+}
+
+@media (max-width:420px) {
+  .page-home .hero-actions {
+    grid-template-columns:1fr;
+  }
+  .home-action-card {
+    min-height:114px;
+    padding:22px 18px;
+  }
+  .home-action-card>strong {
+    font-size:25px;
+  }
+  .page-home .hero-inner {
+    padding-bottom:60px;
+  }
+  .page-home .home-hero,
+  .page-home .hero-inner {
+    min-height:590px;
+  }
+}

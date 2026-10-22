@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="pl"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111217">
+  <meta name="description" content="Zaplanuj wizytę w PC Club. Wybierz strefę, datę, czas gry i liczbę stanowisk. Przykładowy koszt zobaczysz od razu.">
+  <title>Wynajem PC — zaplanuj sesję | PC Club</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer=""></script>
+<link rel="stylesheet" href="reference.css"></head>
+<body class="reference-layout page-booking">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header"><div class="container header-inner"><button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button><a class="brand" href="index.html" aria-label="PC Club — strona główna"><span class="brand-name"><span>PC Club</span>PC Club</span></a><nav class="desktop-nav" aria-label="Nawigacja główna"><a href="index.html">Strona główna</a><a href="wypozyczalnia.html" aria-current="page">Wynajem PC</a><a href="cennik.html">Cennik</a><a href="kontakt.html">Kontakt</a></nav><nav class="mobile-menu" id="mobile-menu" aria-label="Menu rozwijane" hidden=""><span class="eyebrow">WYBIERZ STRONĘ</span><a href="index.html">Strona główna <span aria-hidden="true">↗</span></a><a href="wypozyczalnia.html" aria-current="page">Wynajem PC <span aria-hidden="true">↗</span></a><a href="cennik.html">Cennik <span aria-hidden="true">↗</span></a><a href="kontakt.html">Kontakt <span aria-hidden="true">↗</span></a><p>PC Club — czas na grę.</p></nav></div></header>
+  <noscript><nav class="noscript-nav" aria-label="Nawigacja bez JavaScript"><a href="index.html">Strona główna</a><a href="wypozyczalnia.html">Wynajem PC</a><a href="cennik.html">Cennik</a><a href="kontakt.html">Kontakt</a></nav></noscript>
+  <main id="main">
+    <section class="page-intro"><div class="container page-intro-inner"><div><span class="eyebrow">REZERWACJA W KLUBIE</span><h1>Wynajem PC</h1><p>Zaplanuj sesję po swojemu. Wybierz termin, czas gry i liczbę stanowisk, a następnie zostaw dane do swojego planu.</p></div><div class="intro-note">Wybierz termin.<br>Ułóż plan.<br><strong>Zagraj na miejscu.</strong></div></div></section>
+    <div class="container page-content">
+      <div class="demo-notice" id="demo-description"><span class="notice-icon" aria-hidden="true">i</span><p><strong>Lokalny planer demonstracyjny.</strong> Ceny są przykładowe, a dostępność nie jest sprawdzana. Zapis nie tworzy rezerwacji i nie wysyła danych do klubu.</p></div>
+      <noscript><p class="demo-notice">Włącz JavaScript, aby korzystać z planera. Bez niego możesz przeglądać informacje na stronie.</p></noscript>
+      <form class="booking-layout" id="booking-form" aria-describedby="demo-description">
+        <section class="panel">
+          <h2 class="panel-title"><span class="step-badge">01</span>Zaplanuj sesję</h2>
+          <div class="form-grid">
+            
+            
+            
+            
+            
+            
+          <div class="form-field"><label for="date">Data sesji</label><input id="date" name="date" type="date" required=""></div><div class="form-field"><label for="time">Godzina rozpoczęcia</label><select id="time" name="time" required=""><option value="">Wybierz godzinę</option><option value="10:00">10:00</option><option value="11:00">11:00</option><option value="12:00">12:00</option><option value="13:00">13:00</option><option value="14:00">14:00</option><option value="15:00">15:00</option><option value="16:00">16:00</option><option value="17:00">17:00</option><option value="18:00">18:00</option><option value="19:00">19:00</option><option value="20:00">20:00</option><option value="21:00">21:00</option><option value="22:00">22:00</option><option value="23:00">23:00</option></select></div><div class="form-field"><label for="duration">Czas gry</label><select id="duration" name="duration" required=""><option value="1">1 godzina</option><option value="3" selected="">3 godziny</option><option value="5">5 godzin</option><option value="10">Pakiet 10 godzin</option></select></div><div class="form-field"><label for="quantity">Liczba stanowisk / PC</label><div class="quantity-control"><button id="quantity-minus" type="button" aria-label="Mniej stanowisk">−</button><input id="quantity" name="quantity" type="number" inputmode="numeric" min="1" max="6" step="1" value="1" required=""><button id="quantity-plus" type="button" aria-label="Więcej stanowisk">+</button></div></div><div class="form-field full-width"><label for="zone">Twoja strefa</label><select id="zone" name="zone" required=""><option value="standard">Standard</option><option value="pro">Pro</option></select></div><div class="form-field full-width"><span class="field-label">Dobrze wiedzieć</span><p class="field-hint">Planujesz więcej niż 6 miejsc? Po uzupełnieniu kontaktu zapytaj klub o sesję dla większej grupy.</p></div></div>
+          <div class="form-divider"></div>
+          <h2 class="panel-title"><span class="step-badge">02</span>Dane do Twojego planu</h2>
+          <p class="panel-description">Te informacje pojawią się tylko w pobranym pliku. Nie zapisujemy ich w pamięci przeglądarki i nie przesyłamy do klubu.</p>
+          <div class="form-grid">
+            <div class="form-field"><label for="name">Imię</label><input id="name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Twoje imię" required=""></div>
+            <div class="form-field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="160" placeholder="twoj@email.pl" required=""></div>
+            <div class="form-field full-width"><label for="phone">Telefon <span>(opcjonalnie)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="Twój numer telefonu"></div>
+            <div class="form-field full-width"><label for="message">Dodatkowa wiadomość <span>(opcjonalnie)</span></label><textarea id="message" name="message" rows="3" maxlength="2000" placeholder="Co jeszcze chcesz uwzględnić w swoim planie?"></textarea></div>
+          </div>
+          <label class="checkbox-label" for="acknowledge"><input id="acknowledge" name="acknowledge" type="checkbox" required=""><span>Rozumiem, że zapisuję lokalny plan z przykładową ceną. To nie jest potwierdzona rezerwacja. Wybrany termin wymaga uzgodnienia z klubem.</span></label>
+        </section>
+        <aside class="panel summary-panel" aria-label="Podsumowanie planu">
+          <span class="eyebrow">TWÓJ PLAN GRY</span><h2>Podsumowanie</h2><span class="summary-status"><span class="status-dot" aria-hidden="true"></span> DOSTĘPNOŚĆ NIEPOTWIERDZONA</span>
+          <dl class="summary-list"><div class="summary-row"><dt>Strefa</dt><dd id="summary-zone">Standard</dd></div><div class="summary-row"><dt>Czas gry</dt><dd id="summary-duration">3 godz.</dd></div><div class="summary-row"><dt>Liczba PC</dt><dd id="summary-quantity">1</dd></div><div class="summary-row"><dt>Data</dt><dd id="summary-date">Wybierz datę</dd></div><div class="summary-row"><dt>Godzina</dt><dd id="summary-time">Wybierz godzinę</dd></div></dl>
+          <div class="summary-total"><span>Łącznie</span><output id="summary-total" aria-live="polite" aria-label="Łączny koszt planu">27 zł</output></div><p class="summary-saving">Mniej niż za pojedyncze godziny: <output id="summary-savings">3 zł</output></p>
+          <button class="button button-lime" type="submit" data-js-enabled="" disabled="">Zapisz plan sesji <span aria-hidden="true">↗</span></button><p class="summary-footnote">Plan zostanie zapisany na tym urządzeniu. Potem pobierzesz podsumowanie w pliku tekstowym.</p><p class="fine-print">Przykładowa wycena. Nie pobieramy płatności i nie tworzymy rezerwacji.</p>
+        </aside>
+      </form>
+      <section class="panel success-panel" id="booking-success" aria-labelledby="success-title" hidden=""><span class="eyebrow">PLAN GOTOWY</span><h2 id="success-title">Pierwszy krok za Tobą.</h2><p id="success-text"></p><div class="success-actions"><button class="button button-dark" id="download-plan" type="button">Pobierz podsumowanie <span aria-hidden="true">↓</span></button><button class="button button-outline" id="edit-plan" type="button">Edytuj plan <span aria-hidden="true">↗</span></button></div></section>
+      <div class="booking-bottom"><p>Pakiet 10 h obejmuje 10 godzin gry. Godziny w planerze są przykładowe.</p><a class="text-link" href="cennik.html">Porównaj pakiety <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-contact-row"><div class="footer-question"><span class="eyebrow">KONTAKT</span><h2>Masz pytania?</h2><p>Zapytaj o rezerwację, cennik lub szczegóły wizyty.</p></div><div class="footer-contact"><span>TELEFON</span><strong>Do uzupełnienia</strong></div><div class="footer-contact"><span>E-MAIL</span><strong>Do uzupełnienia</strong></div><div class="footer-contact"><span>ADRES KLUBU</span><strong>Do uzupełnienia</strong></div></div><div class="footer-bottom"><a class="footer-brand" href="index.html">PC Club</a><nav aria-label="Nawigacja w stopce"><a href="index.html">Strona główna</a><a href="wypozyczalnia.html" aria-current="page">Wynajem PC</a><a href="cennik.html">Cennik</a><a href="kontakt.html">Kontakt</a></nav><span class="demo-label">WERSJA KONCEPCYJNA</span></div></div></footer>
+
+
+</body></html>
