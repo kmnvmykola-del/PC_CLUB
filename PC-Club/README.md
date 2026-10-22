@@ -1,11 +1,3 @@
-# PC Club
-
-**Responsywna strona klubu gamingowego · Responsive PC gaming club website**
-
-[Polski](#polski) · [English](#english)
-
-![Wizualizacja koncepcyjna klubu / Gaming club concept image](assets/gaming-lounge.png)
-
 ## Polski
 
 ### O projekcie
